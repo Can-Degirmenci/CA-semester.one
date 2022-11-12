@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+
+  padding: 10px;
+  margin: 10px;
+  
+}
+nav, #menu-checkbox {
+  display: none;
+}
+#menu-checkbox:checked ~ nav{
+  display: block;
+}
+header{
+  position: relative;
+  background-color: white;
+}
+nav{
+  position:absolute;
+  background-color: rgb(255, 255, 255);
+  top:0px;
+  left: 30px;
+ 
+}
+nav a{
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color:rgba(10, 54, 65, 1);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-family: 'comfortaa', sans-serif, serif;
+  
+  
+  
+}
+@media(min-width:600px){
+  nav{display: block;
+    position: static;
+     }
+  .hamburger-icon{
+    display: none;
+  }
+  nav a{
+    display: inline-block;
+  }
+}
+
+.hero{
+  width: 100%; 
+  max-width: 900px;
+  height: auto;
+  margin: 20px auto ;
+  padding: 30px auto;
+ }
+ .explore{
+  width: 100%; 
+  max-width: 600px;
+  height: auto;
+ margin: 150px auto  ;
+  padding: 30px auto;
+}
+
+ .content{
+  position: relative left 50px;
+  padding: 80px;
+  height: 50px;
+  text-align: center;
+ 
+ }
