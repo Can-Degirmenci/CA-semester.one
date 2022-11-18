@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
 
-  padding: 10px;
-  margin: 10px;
-  
-}
+html {
+  box-sizing: border-box;
+ }
+ html:focus-within {
+  scroll-behavior: smooth;
+ }
+
+ *,
+ *::before,
+ *::after {
+  box-sizing: inherit;
+ }
+
+ 
+
+  /*navigation bar*/
 nav, #menu-checkbox {
   display: none;
 }
@@ -14,15 +25,15 @@ nav, #menu-checkbox {
 }
 header{
   position: relative;
-  background-color: white;
+  background-color:none;
 }
 nav{
-  position:absolute;
-  background-color: rgb(255, 255, 255);
-  top:0px;
-  left: 30px;
- 
-}
+  position:relative;
+  background-color: none;
+  padding: none;
+  margin: 5px;
+ }
+
 nav a{
   display: block;
   color: rgb(255, 255, 255);
@@ -30,43 +41,243 @@ nav a{
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 2.5rem;
+  margin: 10px;
   text-decoration: none;
   font-family: 'comfortaa', sans-serif, serif;
-  
-  
-  
-}
-@media(min-width:600px){
-  nav{display: block;
-    position: static;
+  text-align: center;
+    
+  }
+  @media (min-width: 600px)  {
+    nav{display:block;
+    position: relative;
+    padding: 0px  0px 100px 700px ;
      }
   .hamburger-icon{
     display: none;
   }
   nav a{
     display: inline-block;
+    text-align: center;
+    font-family: 'comfortaa', sans-serif, serif;
   }
+  
 }
+.logo{
+  
+  margin: 0px;
+  padding:50px 0px 0px 100px;
+  position:relative;
+ 
+}
+/*main content*/
 
+ 
 .hero{
-  width: 100%; 
-  max-width: 900px;
-  height: auto;
-  margin: 20px auto ;
-  padding: 30px auto;
- }
- .explore{
-  width: 100%; 
-  max-width: 600px;
-  height: auto;
- margin: 150px auto  ;
-  padding: 30px auto;
+  background-image: url(images/fasthikingheader\ Bergans.jpg);
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: center;
+  max-width: 100%;
+  padding: 300px 150px 150px 300px;
+  margin: 10px ;
+  border-radius: 20px;
+ 
+  
+}
+.idex-container{
+ 
+ 
+}
+.explore{
+  background-image: url(images/explore.png);
+  background-repeat: no-repeat;
+  background: position center;
+  background-size:500px;
+  max-width:100%;
+  border-radius: 8px;
+  padding: 150px;
+  margin: 100px 80px 20px 320px;
+  position:relative;
+  
+}
+.push{
+  background-image: url(images/push.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-color: black;
+  border-radius: 10px;
+
+  position: relative;
+  padding:0px 200px 200px 200px;
+  margin:0px 800px 150px 800px;
+
+  
+
+  }
+  .index-text{
+    background-color: rgb(255, 255, 255);
+    background-size:contain;
+    padding: 80px;
+    margin: 10px 800px 10px 800px;
+    position: absolute;
+    font-family: 'comfortaa', sans-serif, serif;
+    font-size: larger;
+  }
+  
+ 
+}
+/*footer*/
+     
+.footer-container{
+    max-width: 100%;
+  margin: 0px auto;
+  padding:0px auto;
+     
 }
 
- .content{
-  position: relative left 50px;
-  padding: 80px;
-  height: 50px;
+ul{
+  list-style: none;
+  font-family:'roboto', sans-serif, serif;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px;
+  
+  
+  }
+li a{
+  text-decoration: none;
   text-align: center;
+  color: rgb(255, 255, 255);
+  background-color:rgba(10, 54, 65, 1);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 5px 2px;
+  margin:5px 5px ;
+  display: inline-block;
  
  }
+
+.footer{
+  padding:70px 30px 10px 10px;
+  margin: 10px 20px;
+  display: block;
+    
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.footer-col{
+    width:35%;
+  padding:2px 30px;
+  margin:20px 20px 20px 0px;
+ 
+}
+.social{
+  max-width: 100%;
+  padding: 10px 20px 0px 30px;
+  margin: 10px 10px 0px 50px;
+  font-family: 'comfortaa', sans-serif, serif;
+ 
+} 
+
+.contact{
+  max-width: 100%;
+  padding: 10px 100px 10px 0px;
+  font-family: 'comfortaa', sans-serif, serif;
+    margin: 10px 50px;
+
+}
+.footer-logo{
+  background-image: url(images/logo.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: center;
+  max-width: 100%;
+  padding:120px;
+  margin:20px;
+  
+}
+
+
+/*product card*/
+.cards{
+  display:inline-block;
+  max-width: 100%;
+  margin: 10px;
+  padding: 50px;
+}
+
+.product-card {
+  max-width: 100%;
+	display: inline-block;
+	position: relative;
+	width: 220px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+.product {
+	display: block;
+	position: relative;
+}
+
+.product  img {
+	max-width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.info {
+	display: block;
+	position: relative;
+	padding: 10px;
+}
+
+.info h4 {
+	position: relative;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 15px;
+	color: #000000;
+	letter-spacing: -1px;
+}
+
+.info .description {
+	display: block;
+	padding-bottom: 15px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #252525;
+}
+
+.info .price {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #372f2b;
+	line-height: 26px;
+  padding: 0px 5px;
+}
+
+.about{
+  background-color: rgba(10, 54, 65, 1);
+  background-size: cover;
+  padding:200px;
+  margin: 50px;
+  border-radius: 80px;
+}
+.text{
+  font-size: x-large;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  font-family: 'comfortaa', sans-serif, serif;
+  text-align: center;
+}
